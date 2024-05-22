@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title> Kalkulator Segitiga </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <h1>Kalkulator matematika segitiga</h1>
+            <p>Hello, I'm Achmad Novanto Catur Soemantri. I try made Math calculator Triangle</p>
+        </div>
+        <!-- Header -->
+    </header>
+
+    <nav>
+        <div class="topnav">
+            <button class="tablink" id="tab1" onclick="gantiTipe(event, 'Luas')">Luas Segitiga</button>
+            <button class="tablink" id="tab2" onclick="gantiTipe(event, 'Keliling')">Keliling Segitiga</button>
+        </div>
+        <!-- Top Navigation -->
+    </nav>
+
+    <div id="Luas" class="tabcontent" style="display: block;">
+        <section>
+            <h2 style="text-align: center;size: 30px;background-color: rgb(40, 151, 255);color: white;padding-block: 10px;">Luas Segitiga</h2>
+        </section>
+        <section class="marginSection">
+            <img src="https://bermatematika.net/wp-content/uploads/2019/06/rumus-heron.png?w=400&h=227">
+            <h2 class="Rumus2">Rumus Luas Segitiga yaitu :</h2>
+            <h2 class="Rumus"><b>L = 1/2 x a x t</b></h2>
+            <h2 class="Rumus2">Dimana :</h2>
+            <h2 class="Rumus2">
+                L = Luas<br> a = Alas<br> t = Tinggi<br>
+            </h2>
+
+            <!--h2 class="Rumus2">a = Alas</h2>
+            <h2 class="Rumus2">t = Tinggi</h2-->
+        </section>
+        <!--Upper Content Luas Segitiga-->
+        <hr/>
+
+        <section class="marginSection">
+            <h1 style="font-size: 32px;text-align: center;">Hitung Luas Segitiga</h1>
+            <form>
+                <input type="number" class="alas" placeholder="Masukkan Nilai Alas" id="inputText"><br>
+                <input type="number" class="tinggi" placeholder="Masukkan Nilai Tinggi" id="inputText"><br>
+                <div>
+                    <p id="hasilLuas"></p>
+                </div>
+
+                <div style="display: flex;justify-content: center;align-content: center;">
+                    <input type="button" value="Hitung" class="Hasil" onclick="luassegitiga()">
+                </div>
+
+                <div style="display: flex;justify-content: end;align-content: end;">
+                    <input type="reset" value="Reset" class="Reset" onclick="btnReset()">
+                </div>
+            </form>
+        </section>
+        <!--Lower Content Luas Segitiga-->
+    </div>
+    <!--Content Luas Segitiga-->
+
+    <div id="Keliling" class="tabcontent" style="display: none;">
+        <section>
+            <h2 style="text-align: center;size: 30px;background-color: rgb(40, 151, 255);color: white;padding-block: 10px;">Keliling Segitiga</h2>
+        </section>
+        <section class="marginSection">
+            <img src="https://bermatematika.net/wp-content/uploads/2019/06/rumus-heron.png?w=400&h=227">
+            <h2 class="Rumus2">Rumus Keliling Segitiga yaitu :</h2>
+            <h2 class="Rumus">K = S1 + S2 + S3</h2>
+            <h2 class="Rumus2">Dimana :</h2>
+            <h2 class="Rumus2">
+                K = Keliling<br> S1 = sisi A<br> S2 = sisi B<br> S3 = sisi C
+            </h2>
+        </section>
+        <!--Upper Content Keliling Segitiga-->
+        <hr/>
+
+        <section class="marginSection">
+            <h1 style="font-size: 32px;text-align: center;">Hitung Keliling Segitiga</h1>
+            <form>
+                <input type="number" class="nilaiA" placeholder="Masukkan Nilai Sisi A" id="inputText"><br>
+                <input type="number" class="nilaiB" placeholder="Masukkan Nilai Sisi B" id="inputText"><br>
+                <input type="number" class="nilaiC" placeholder="Masukkan Nilai Sisi C" id="inputText"><br>
+                <div>
+                    <p id="hasilKeliling"></p>
+                </div>
+
+                <div style="display: flex;justify-content: center;align-content: center;">
+                    <input type="button" value="Hitung" class="Hasil" onclick="kelilingsegitiga()">
+                </div>
+
+                <div style="display: flex;justify-content: end;align-content: end;">
+                    <input type="reset" value="Reset" class="Reset" onclick="btnReset()">
+                </div>
+            </form>
+        </section>
+        <!--Lower Content Keliling Segitiga-->
+    </div>
+    <!--Content Keliling Segitiga-->
+
+</body>
+
+</html>

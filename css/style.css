@@ -1,0 +1,159 @@
+/* Design CSS*/
+
+body {
+    margin: 0px;
+    background-color: #e3f5ff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+.marginSection {
+    margin-inline: 10px;
+}
+
+
+/* Global */
+
+.header {
+    padding: 5px;
+    text-align: center;
+    background: rgb(40, 151, 255);
+    color: rgb(226, 226, 226);
+}
+
+.header h1 {
+    font-size: 25px;
+}
+
+
+/*Header*/
+
+.topnav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    overflow: hidden;
+    background-color: #333;
+    margin-top: 2px;
+}
+
+.topnav button {
+    float: left;
+    border: none;
+    outline: none;
+    background-color: #333;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    transition: 0.2s;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav button:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav button.active {
+    background-color: rgb(40, 151, 255);
+    color: white;
+}
+
+
+/* Top Navigation*/
+
+.tabcontent {
+    display: none;
+    position: relative;
+    animation: fadeEffect;
+    animation-duration: 0.7s;
+    /* Fading effect takes 2 second */
+}
+
+
+/* Go from zero to full opacity */
+
+@keyframes fadeEffect {
+    0% {
+        opacity: 0;
+        left: 300px;
+    }
+    100% {
+        opacity: 1;
+        left: 0px;
+    }
+}
+
+hr {
+    border: 2px solid rgb(40, 151, 255);
+}
+
+
+/*Line*/
+
+.Rumus {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.Rumus2 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+img {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    width: 35%;
+}
+
+input {
+    display: flex;
+    width: 50%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    FONT-WEIGHT: 500;
+    font-size: 18px;
+    padding-block: 3px;
+    padding-inline: 2px;
+    border: solid;
+    border-color: rgb(42 119 192);
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.Hasil {
+    background-color: rgb(40, 151, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: auto;
+    font-size: 16px;
+    padding-inline: 30px;
+    padding-block: 10px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+}
+
+.Reset {
+    background-color: rgb(40, 230, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: auto;
+    font-size: 16px;
+    padding-inline: 20px;
+    padding-block: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Hidden arrow spin button
